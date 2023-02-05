@@ -1,2 +1,2 @@
-let name = 'Oleg', surn = 'Gazmanov';
+let name = 'Dmitry', surn = 'Nagiev';
 alert(name + ' ' + surn);
