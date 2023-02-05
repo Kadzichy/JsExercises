@@ -1,3 +1,2 @@
-let name = "Dmitry";
-let surn ="Nagiev";
-alert(name + surn);
+let name = 'Oleg', surn = 'Gazmanov';
+alert(name + ' ' + surn);
