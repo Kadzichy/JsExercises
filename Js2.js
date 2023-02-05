@@ -1,1 +1,4 @@
-alert('To the')
+alert('To the') 
+/*
+комментарий
+*/
