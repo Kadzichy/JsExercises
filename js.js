@@ -1,12 +1,8 @@
-let a = '10', b = '20';
-console.log(Number(a)+Number(b));
+let a = parseInt('5px'), b = parseInt('6px');
+console.log(a+b);
 
-alert( '2' + Number('3') );
+let c = parseFloat('5.5px'), d = parseFloat('6.25px');
+console.log(c+d);
 
-let c = +'2';
-let d = +'3';
-console.log(c + d);
-
-let e = '2';
-let f = '3';
-console.log(Number(e)+Number(f));
+let e = parseFloat('5.5px'), f = parseFloat('6.25px');
+console.log(e+f+'px');
