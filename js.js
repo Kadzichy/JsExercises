@@ -1,32 +1,11 @@
-let a = Boolean(3);
-alert(a);
+let one = 'abcde';
+alert(one[0]); 
+alert(one[2]); 
+alert(one[4]); 
 
-let b = Boolean(0);
-alert(b);
+let two = 'abcde';
+alert(two[4]+two[3]+two[2]+two[1]+two[0]); 
 
-let c = Boolean(-1);
-calert(c);
-
-let d = Boolean(-0);
-alert(d);
-
-let e = Boolean('alec');
-alert(e);
-
-let f = Boolean('');
-alert(f);
-
-let g = Boolean(3 * 'abs');
-alert(g);
-
-let h = Boolean('');
-alert(h);
-
-let i = Boolean('0');
-alert(j);
-
-let k = Boolean(true);
-alert(k);
-
-let l = Boolean(false);
-alert(l);
+let three = 'abcde';
+let num = 3; 
+alert(three[num]); 
