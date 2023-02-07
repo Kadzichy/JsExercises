@@ -1,8 +1,8 @@
-let a = parseInt('5px'), b = parseInt('6px');
-console.log(a+b);
+let a = '1', str1 = '2';
+alert(String(a)+String(b));
 
-let c = parseFloat('5.5px'), d = parseFloat('6.25px');
-console.log(c+d);
+let c = '123';
+alert(String(d).length);
 
-let e = parseFloat('5.5px'), f = parseFloat('6.25px');
-console.log(e+f+'px');
+let e = '1', str3 = '2';
+alert(String(f).length+String(g).length);
