@@ -1,4 +1,2 @@
-let a = 'A';
-console.log(a);
-
-alert(eee);
+const a = 3.14;
+console.log(4 * a * 12);
