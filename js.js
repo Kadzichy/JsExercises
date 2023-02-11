@@ -1,12 +1,12 @@
-alert('Your age: ' + prompt('Your age?')); 
+document.write('Oleg Tinkoff');
 
-let num1 = prompt('Введите первое число');
-let num2 = prompt('Введите второе число');
-alert(Number(num1) + Number(num2)); 
+document.write('<p style="font-style: italic;">Oleg tinkoff</p>');
 
-let num3 = prompt('Сторона квадрата = ');
-alert(num3*num3);
+let str = 'Oleg tinkoff';
+document.write('<p style="font-style: italic;">Oleg tinkoff</p>');
 
-let num4 = prompt('Введите первую сторону прямоугольника');
-let num5 = prompt('Введите вторую сторону прямоугольника');
-alert(Number(num4) * Number(num5)); 
+document.write('1<br>');
+document.write('2<br>');
+document.write('3<br>');
+document.write('4<br>');
+document.write('5<br>');
