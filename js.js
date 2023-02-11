@@ -1,12 +1,17 @@
-document.write('Oleg Tinkoff');
+let num1 = 1;
+let num2 = 2;
+alert('сумма: ', num1 + num2); 
 
-document.write('<p style="font-style: italic;">Oleg tinkoff</p>');
+let a = 1;
+let b = 2;
+alert(a + b);
 
-let str = 'Oleg tinkoff';
-document.write('<p style="font-style: italic;">Oleg tinkoff</p>');
+let num = '123';
+let sum = Number(num[0]) + Number(num[1]) + Number(num[2]);
+alert(sum);
 
-document.write('1<br>');
-document.write('2<br>');
-document.write('3<br>');
-document.write('4<br>');
-document.write('5<br>');
+let num3 = '123';
+alert(num3[0]);
+
+let a1 = 0;
+alert(++a1);
