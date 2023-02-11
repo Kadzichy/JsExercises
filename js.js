@@ -1,20 +1,15 @@
-let r = 2, pi = 3.14;
-alert(pi * r ** 2);
+let array = [1, 2, 3, 4, 5];
+alert(array[0]);
+alert(array[1]);
+alert(array[2]);
+alert(array[3]);
+alert(array[4]);
+console.log(array[0], array[1], array[2], array[3], array[4]);
 
-let a = 15;
-s = a ** 2;
-alert(s);
-
-let b = 1, c = 2;
-s = b + c;
-alert(s);
-
-let d = 1, f = 2;
-s = d * f;
-alert(s);
-
-let tc = 2;
-alert(tc * 33.8);
-
-let tf = 2;
-alert((tf - 32) / 1.8);
+let arr = ['1', '2', '3', '4', '5'];
+alert(arr[0]);
+alert(arr[1]);
+alert(arr[2]);
+alert(arr[3]);
+alert(arr[4]);
+console.log(arr[0], arr[1], arr[2], arr[3], arr[4]);
