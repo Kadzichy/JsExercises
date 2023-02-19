@@ -1,5 +1,5 @@
-let num = 1
-if (num == 0 || num > 1 && num < 5 ) {
+let num = 3;	
+if (num > 5 || num > 0 && num < 3) {
 	console.log('+++');
 } else {
 	console.log('---');
