@@ -1,6 +1,14 @@
-let obj = {x: 1, y: 2, z: 3};
-let prop = 'x';
-console.log(obj[prop]);
-let obj1 = {x: 1, y: 2, z: 3};
-let prop1 = 'x';
-console.log(obj1[prop1]);
+let key = 'x';
+let obj = {
+	[key]: 1,
+	y: 2,
+	z: 3
+};
+let obj1 = {
+	[key1]: 1,
+	[key2]: 2,
+	[key3]: 3
+};
+let key1 = 'x';
+let key2 = 'y';
+let key3 = 'z';
