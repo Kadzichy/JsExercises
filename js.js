@@ -1,6 +1,6 @@
-let test = 9;
-if (test > 10) {
-	console.log('Переменная больше 10');
+let test = 10;
+if (test == 10) {
+	console.log('Переменная равна 10'); 
 } else {
-	console.log('Переменная не больше 10');
+	console.log('Переменная неравна 10');
 }
