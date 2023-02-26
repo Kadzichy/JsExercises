@@ -1,10 +1,14 @@
-let day = 12;
-if (day <= 10){
-    console.log("Первая декада")
-} else if (day >= 11 && day <= 20){
-    console.log("Вторая декада")
-} else if (day >= 21 && day<=31){
-    console.log("Третья декада")
+let num = 99;
+if (num >= 10 && num <= 99){
+    var tmp, sum = 0;
+    while (num) {
+        tmp = num % 10;
+        num = (num - tmp) / 10;
+        sum += tmp;
+    }
+console.log(sum)
+} if (sum <= 9){
+    console.log("Cумма цифр однозначна")
 } else {
-    console.log("Неверный номер")
+    console.log("Cумма цифр двухзначна")
 }
