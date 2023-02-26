@@ -1,5 +1,4 @@
-let num = 3;	
-if (num > 5 || num > 0 && num < 3) {
+if ( !(num1 >= 0 || num2 <= 10)) {
 	console.log('+++');
 } else {
 	console.log('---');
