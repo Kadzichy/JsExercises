@@ -1,14 +1,16 @@
-let num = 99;
-if (num >= 10 && num <= 99){
-    var tmp, sum = 0;
-    while (num) {
-        tmp = num % 10;
-        num = (num - tmp) / 10;
-        sum += tmp;
-    }
-console.log(sum)
-} if (sum <= 9){
-    console.log("Cумма цифр однозначна")
-} else {
-    console.log("Cумма цифр двухзначна")
+let lang = 'ru';
+
+switch (lang) {
+    case 1 (lang == 'ru'):
+	console.log('рус');
+    break;
+    case 2 (lang == 'en'):
+	console.log('анг');
+    break;
+    case 3 (lang == 'de'):
+	console.log('нем');
+    break;
+    default:
+	console.log('язык не поддерживается');
+    break;
 }
