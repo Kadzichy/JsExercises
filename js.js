@@ -1,14 +1,16 @@
-let age = 17;
-let res;
-
-if (age >= 18) {
-	if (age <= 23) {
-		res = 'от 18 до 23';
-	} else {
-		res = 'больше 23';
-	}
-} else {
-	res = 'меньше 18';
+let min = 30;
+if (min >= 0 && min <= 14) {
+	console.log('1 четверть');
 }
 
-console.log(res);
+if (min >= 15 && min <= 29) {
+	console.log('2 четверть');
+}
+
+if (min >= 30 && min <= 44) {
+	console.log('3 четверть');
+}
+
+if (min >= 45 && min <= 59) {
+	console.log('4 четверть');
+}
