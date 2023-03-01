@@ -1,9 +1,14 @@
-let adult = 17;
+let age = 17;
+let res;
 
-if (adult >= 18) {
-	adult = true;
+if (age >= 18) {
+	if (age <= 23) {
+		res = 'от 18 до 23';
+	} else {
+		res = 'больше 23';
+	}
 } else {
-	adult = false;
+	res = 'меньше 18';
 }
 
-console.log(adult);
+console.log(res);
