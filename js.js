@@ -1,17 +1,4 @@
-let min = 30;
-if (min >= 0 && min <= 14) {
-	console.log('1 четверть');
+let arr = [1, 2, 3];
+if (arr.length == 3) {
+	console.log(arr[0] + arr[1] + arr[2]);
 }
-
-if (min >= 15 && min <= 29) {
-	console.log('2 четверть');
-}
-
-if (min >= 30 && min <= 44) {
-	console.log('3 четверть');
-}
-
-if (min >= 45 && min <= 59) {
-	console.log('4 четверть');
-}
- 
