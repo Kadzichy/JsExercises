@@ -1,15 +1,20 @@
-let a = 25;
-let rest = a % 2;
-if (rest === 0) {
-	console.log('Деление нацело');
+let num = 12;
+if (String(num).lenght === 2) {
+	console.log('+++');
 } else {
-	console.log('Деление с остатком' + rest); 
+	console.log('---');
 }
 
-let b = 12;
-let rest1 = b % 3;
-if (rest1 === 0) {
-	console.log('Деление нацело');
+let num1 = 123;
+if (String(num1)[0] === 1) {
+	console.log('+++');
 } else {
-	console.log('Деление с остатком ' + rest1); 
+	console.log('---');
+}
+
+let num2 = 12;
+if (num2.length === 2) {
+	console.log('+++');
+} else {
+	console.log('---');
 }
