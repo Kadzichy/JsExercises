@@ -1,15 +1,14 @@
-let str = 'abcde';
-if (str[0] == 'a') {
-	console.log('true');
+let num = 123450;
+if (String(num)[5] == 0) {
+	console.log('+++');
+} else {
+	console.log('---');
 }
-
-let str1 = 'abcde';
-let last = str1[str1.length - 1];
-if (last == 'e') {
-	console.log('true');
-}
-
-let str2 = 'abcde';
-if (str2[0] == 'a' || str2[0] == 'b') {
-	console.log('true');
+// 2
+let n = 11;
+let last = String(n)[1];
+if (last == 0 || last == 2 || last == 4 || last == 6 || last == 8){
+    console.log('+++');
+} else {
+	console.log('---');
 }
