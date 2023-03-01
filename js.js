@@ -1,14 +1,15 @@
-let num = 123450;
-if (String(num)[5] == 0) {
-	console.log('+++');
+let a = 25;
+let rest = a % 2;
+if (rest === 0) {
+	console.log('Деление нацело');
 } else {
-	console.log('---');
+	console.log('Деление с остатком' + rest); 
 }
 
-let n = 11;
-let last = String(n)[1];
-if (last == 0 || last == 2 || last == 4 || last == 6 || last == 8){
-    console.log('+++');
+let b = 12;
+let rest1 = b % 3;
+if (rest1 === 0) {
+	console.log('Деление нацело');
 } else {
-	console.log('---');
+	console.log('Деление с остатком ' + rest1); 
 }
