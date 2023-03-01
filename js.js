@@ -1,6 +1,9 @@
-let age = confirm('Вам есть 18?');
-if (age) {
-	alert('Текст для взрослых');
+let adult = 17;
+
+if (adult >= 18) {
+	adult = true;
 } else {
-	alert('Доступ запрещен');
+	adult = false;
 }
+
+console.log(adult);
