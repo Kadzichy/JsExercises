@@ -1,20 +1,19 @@
-let a = 123456;
-let b = String(n)[0];
-if (a == 1 || a == 2 || a == 3){
-    console.log('+++');
-} else {
-	console.log('---');
+for (let a = 1; a <= 100; a++) {
+	console.log(a);
 }
 
-let month = 12;
-if (month == 1 || month == 2 || month == 12){
-    console.log("Зима")
-} else if (month == 3 || month == 4 || month == 5){
-    console.log("Весна")
-} else if (month == 6 || month == 7 || month == 8){
-    console.log("Лето")
-} else if (month == 9 || month == 10 || month == 11){
-    console.log("Осень")
-} else {
-    console.log("Неправильно")
+for (let b = 11; b <= 33; b++) {
+	console.log(b);
+}
+
+for (let c = 0; c <= 100; c += 2) {
+	console.log(c);
+}
+
+for (let d = 1; d <= 99; d += 2) {
+	console.log(d);
+}
+
+for (let e = 100; e > 0; e--) {
+	console.log(e);
 }
