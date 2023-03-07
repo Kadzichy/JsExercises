@@ -1,17 +1,10 @@
-let i = 1;
-while (i <= 100) {
-	console.log(i);
-	i++;
+let arr = ['a', 'b', 'c', 'd', 'e'];
+for (let i = 1; i <= arr.length - 2; i++) { 
+	console.log(arr[i]);
 }
 
-let i1 = 11;
-while (i1 <= 33) {
-	console.log(i1);
-	i1++;
-	
-}
-let i2 = 3;
-while (i2 <= 1000){
-    i2 = i2 * 3;
-console.log(i2)
+let arr1 = ['a', 'b', 'c', 'd', 'e'];
+for (let i = arr1.length - 1; i > 0; 
+	i--) { 
+	console.log(arr1[i]);
 }
