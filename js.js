@@ -1,11 +1,27 @@
-let obj = {x: 1, y: 2, z: 3};
-for (let key in obj) {
-	obj[key] = obj[key] * 2;
+let arr = ['a', 'b', 'c', 'd', 'e'];
+let flag = false;
+for (let elem of arr) {
+	if (elem == 'c') {
+		flag = true;
+		break;
+	}
 }
-console.log(obj);
+if (flag === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
 
-let obj1 = {x: 1, y: 2, z: 3};
-for (let key in obj1) {
-	obj1[key] = obj1[key] + 1;
+let arr1 = [1, 2, 3, 4, 5];
+let flag1 = false;
+for (let elem of arr1) {
+	if (elem % 2 == 0) {
+		flag1 = true;
+		break;
+	}
 }
-console.log(obj1);
+if (flag1 === true) {
+	console.log('+++');
+} else {
+	console.log('---');
+}
