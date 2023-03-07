@@ -1,41 +1,28 @@
-let arr1 = [1, 2, 3, 4, 0, 5, 6];
-for (let i = 0; i <= arr1.length - 1; i++) {
-    if (arr1[i] == 0) {
-        break;
+for (let i = 10; i <= 100; i++) {
+let str = String(i); 
+	console.log(str[0]);
+}
+
+for (let i = 10; i <= 1000; i++) {
+	let str = String(i); 
+    res = Number(str[0]) + Number(str[1])
+    console.log(res);
+}
+
+for (let i = 10; i <= 1000; i++) {
+    str = String(i);
+    if (str[0] == 1) {
+       console.log(Number(str));
     } else {
-        console.log(arr1[i]);
-    };
+       continue;
+   };
 };
 
-let arr2 = [1, 2, 3, 4, -2, 5, 6];
-let res2 = 0;
-for (let i = 0; i <= arr2.length - 1; i++) {
-    if (arr2[i] < 0) {
-        break;
+for (let i = 10; i <= 1000; i++) {
+    str = String(i);
+   if (Number(str[0]) + Number(str[1])  == 5) {
+       console.log(Number(str));
     } else {
-        res2 += arr2[i];
+       continue;
     };
 };
-console.log(res2)
-
-let arr3 = [1, 2, 6, 4, 3, 5, 6];
-let res3 = 0;
-for (let i = 0; i <= arr3.length - 1; i++) {
-    if (arr3[i] == 3) {
-        console.log(i)
-        break;
-    } else {
-        continue;
-    };
-};
-
-let num4 = 1, i = 1;
-for (i; ; i++) {
-    if (num4 + i > 100) {
-        break;
-    } else {
-        num4 += i;
-    };
-};
-console.log(num4);
-console.log(i);
