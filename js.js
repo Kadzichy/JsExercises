@@ -1,23 +1,20 @@
-let arr = [];
-for (let i = 1; i <= 10; i++) {
-	arr.push(i);
+let arr = [1, 2, 3, 4];
+for (let i = 0; i < arr.length; 
+	i++) { 
+	arr[i] = arr[i] ** 2;
 }
 console.log(arr);
 
-let arr1 = [];
-for (let i = 1; i <= 10; i++) {
-	arr1.push('x');
+let arr1 = [1, 2, 3, 4];
+for (let i = 0; i < arr1.length; 
+	i++) { 
+	arr1[i]--;
 }
 console.log(arr1);
 
-let arr3 = [-1, -9, 3, -5, 4, -6, 8, 1];
-let newArr = [];
-for (let key in arr3) {
-    if (arr3[key] > 0) {
-        newArr.push(arr3[key]);
-    } else {
-        continue;
-    }
+let arr2 = [1, 2, 3, 4];
+for (let i = 0; i < arr2.length; 
+	i++) { 
+	arr2[i] += 10;
 }
-console.log(arr3); 
-console.log(newArr);
+console.log(arr2);
