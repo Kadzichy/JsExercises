@@ -1,14 +1,23 @@
-let arr = [2, 5, 9, 15, 1, 4];
-for (let elem of arr) {
-	if (elem >= 3 && elem <= 10) {
-		console.log(elem);
-	}
+let res = 0;
+for (let i = 2; i <= 100; i++) {
+    if(i % 2 == 0){
+	res += i;
+    }
 }
+console.log(res);
 
-let obj = {a: 1, b: 2, c: 3, d: 
-	4, e: 5}; 
-for (let elem in obj) {
-	if (elem % 2 != 0) {
-		console.log(elem);
-	}
+let res1 = 0;
+for (let i = 1; i <= 99; i++) {
+    if(i % 2 != 0){
+	res1 += i;
+    }
 }
+console.log(res1);
+
+let res2 = 1;
+for (let i = 1; i <= 20; i++) {
+    if(i % 2 != 0){
+	res2 *= i;
+    }
+}
+console.log(res2);
