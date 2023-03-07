@@ -1,20 +1,8 @@
-let arr = [1, 2, 3, 4];
-for (let i = 0; i < arr.length; 
-	i++) { 
-	arr[i] = arr[i] ** 2;
+let arr1 = ['пн', 'вт', 'ср', 'чт', 
+	'пт', 'сб', 'вс']; 
+let arr2 = [1, 2, 3, 4, 5, 6, 7];
+let obj = {};
+for (let i = 0; i <= 8; i++) {
+	obj[arr1[i]] = arr2[i];
 }
-console.log(arr);
-
-let arr1 = [1, 2, 3, 4];
-for (let i = 0; i < arr1.length; 
-	i++) { 
-	arr1[i]--;
-}
-console.log(arr1);
-
-let arr2 = [1, 2, 3, 4];
-for (let i = 0; i < arr2.length; 
-	i++) { 
-	arr2[i] += 10;
-}
-console.log(arr2);
+console.log(obj);
