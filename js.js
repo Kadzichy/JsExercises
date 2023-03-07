@@ -38,4 +38,4 @@ for (i; ; i++) {
     };
 };
 console.log(num4);
-console.log(i);
+console.log(i); 
