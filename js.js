@@ -1,5 +1,11 @@
-let arr = [1, 2, 3, 4, 5, 6];
-for (let i = 1; i < arr.length; 
-	i++) { 
-	console.log(arr[i + 1] + arr[i]);
+let arr = [10, 20, 30, 40, 21, 32, 51]; 
+let sum = 0;
+for (let elem of arr) {
+    let num = String(arr[i]);
+    let char = num[0];
+	if (char == 1 || char == 2) {
+		sum += elem;
+	}
 }
+
+console.log(sum);
