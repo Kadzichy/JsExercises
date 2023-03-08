@@ -1,27 +1,23 @@
-let arr = ['a', 'b', 'c', 'd', 'e'];
-let flag = false;
-for (let elem of arr) {
-	if (elem == 'c') {
-		flag = true;
-		break;
-	}
-}
-if (flag === true) {
-	console.log('+++');
-} else {
-	console.log('---');
-}
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3];
+let counter = 0;
 
-let arr1 = [1, 2, 3, 4, 5];
-let flag1 = false;
-for (let elem of arr1) {
-	if (elem % 2 == 0) {
-		flag1 = true;
-		break;
+for (let elem of arr) {
+	if (elem == '3') {
+		counter++;
 	}
 }
-if (flag1 === true) {
-	console.log('+++');
-} else {
-	console.log('---');
+console.log(counter);
+
+let arr = [1, 2, 3, 2, 4, 3, 5, 6, 3, 2, 3]; 
+let counter = 0;
+let counter1 = 0;
+for (let elem of arr) {
+	if (elem == 3) {
+		counter++;
+	}
+    if (elem == 2) {
+		counter1++;
+	}
 }
+console.log(counter);
+console.log(counter1);
