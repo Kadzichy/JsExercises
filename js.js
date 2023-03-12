@@ -1,35 +1,20 @@
 let arr = [];
-for (let i = 0; i < 3; i++) {
-    arr[i] = [];
-    for (let j = 1; j <= 5; j++) {
-        arr[i].push(j);
-    }
+for (let i = 0, k = 1; i < 4; 
+	i++) { 
+	arr[i] = [];
+	for (let j = 0; j < 2; j++) {
+		arr[i].push(k++);
+	}
 }
 console.log(arr);
 
-let arr1 = [];
-for (let i = 0; i < 3; i++) {
-    arr1[i] = [];
-    for (let j = 1; j <= 5; j++) {
-        arr1[i].push(j);
-    }
-}
-console.log(arr1);
-
 let arr2 = [];
-for (let i = 0; i < 3; i++) {
+let k = 0;
+for (let i = 0; i < 4; i++) {
     arr2[i] = [];
-    for (let j = 1; j <= 5; j++) {
-        arr2[i].push(j);
+    for (let j = 0; j < 3; j++) {
+        k += 2
+        arr2[i].push(k);
     }
 }
-console.log(arr2);
-
-let arr4 = [];
-    for (let i = 0; i < 3; i++) {
-    arr4[i] = [];
-    for (let j = 1; j <= 5; j++) {
-        arr4[i].push(j);
-    }
-}
-console.log(arr4);
+console.log(arr2)
