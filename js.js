@@ -1,22 +1,10 @@
-let employees = [
-	{
-		name: 'name1',
-		salary: 300,
-		age: 28,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-		age: 29,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-		age: 30,
-	},
-];
-employees.push({
-	name: 'name4',
-	salary: 700,
-	age: 40,
-});
+let affairs = {
+	'2019-12-28': ['data11', 'data12', 'data13'], 
+	'2019-12-29': ['data21', 'data22', 'data23'], 
+	'2019-12-30': ['data31', 'data32', 'data33'], 
+}
+affairs['2019-12-28'].push('data24');
+console.log(affairs)
+
+affairs['2019-12-31'] = ['data41', 'data42'];
+console.log(affairs)
