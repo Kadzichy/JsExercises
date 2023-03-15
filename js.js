@@ -27,7 +27,7 @@ let employees1 = [
 		salary: 400,
 	},
 	{
-		name: 'name3',
+		name: 'name3', 
 		salary: 500,
 	},
 ];
