@@ -1,9 +1,10 @@
-function func(num) {
-	let sum = 0;
-	
-	for (let i = 1; i <= num; i++) {
-		sum += i;
-	}
-    return sum;
+let i = 0;
+function calc(x) {
+    for (;; i++) {
+        x = x / 2;
+        if (x <= 10) {
+            return i;
+        } 
+    }
 }
-console.log( func(5) );
+console.log(calc(100));
