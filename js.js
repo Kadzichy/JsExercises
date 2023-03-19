@@ -1,13 +1,11 @@
-function func(num = 5) {
-	console.log(num * num);
+function func(num) {
+	return num ** 3;
 }
-func(2);
-func(3);
-func();
-=
-function func1(num1 = 0, num2 = 0) {
-	console.log(num1 + num2);
+let res = func(3);
+console.log(res);
+
+function func1(num1) {
+	return Math.sqrt(num1);
 }
-func1(2, 3);
-func1(3);
-func1();
+let res1 = func1(4) + func1(3);
+console.log(res1);
