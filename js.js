@@ -18,3 +18,4 @@ function calcArr_2(arr) {
     return res;
 };
 console.log(calcArr_2(arr2));
+ 
