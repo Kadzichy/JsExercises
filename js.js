@@ -1,23 +1,21 @@
-let arr1 = [1, 2, 3, 4, 5,6]
-function sumArr(arr) {
-let res = 0;
-for (let elem of arr) {
-    res += elem;
-};
-return res;
-};
-console.log(sumArr(arr1));
+let num = 1;
+function func() {
+	console.log(num);
+}
+func();
 
-let num2 = 16;
-let newArr2 = [];
-function getDivider(number) {
-for (let i = 1; i <= number; i++) {
-    if (number % i == 0) {
-        newArr2.push(i)
-    } else {
-        continue;
-    };
-};
-    return newArr2;
-};
-console.log(getDivider(num2));
+let num1 = 1;
+function func1() {
+	console.log(num1);
+}
+num1 = 2;
+func1();
+
+function func2() {
+	console.log(num2);
+}
+let num2;
+num2 = 1;
+func2();
+num2 = 2;
+func2();
