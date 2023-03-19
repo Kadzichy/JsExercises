@@ -1,7 +1,13 @@
-function sum(num1, num2, num3){
-    console.log(num1+num2+num3)
+function func(num = 5) {
+	console.log(num * num);
 }
-let param1 = 1;
-let param2 = 2;
-let param3 = 3;
-sum(param1, param2, param3)
+func(2);
+func(3);
+func();
+=
+function func1(num1 = 0, num2 = 0) {
+	console.log(num1 + num2);
+}
+func1(2, 3);
+func1(3);
+func1();
