@@ -1,23 +1,27 @@
-function sqrt(num) {
-	return Math.sqrt(num);
+function func1(num) {
+	return num;
+	
+	let res = num ** 2;
+	return res;
 }
-function round(num) {
-	return num.toFixed(3);
-}
-let res = round(sqrt(2));
-console.log(res)
+console.log( func1(3) );
 
-function sqrt1(num4) {
-	return Math.sqrt1(num4);
+function func2(num) {
+	if (num <= 0) {
+		return Math.abs(num);
+	} else {
+		return num ** 2;
+	}
 }
-function sum(num1, num2, num3) {
-	return num1 + num2 + num3;
-}
-let res1 = sum(sqrt1(2), sqrt1(3), sqrt1(4));
-console.log(res1)
+console.log( func2(10) );
+console.log( func2(-5) );
 
-function round2(num) {
-    return num.toFixed(3);
+function func(num) {
+	if (num <= 0) {
+		return Math.abs(num);
+	}
+	
+	return num ** 2;
 }
-let res2 = round2(sum1(sqrt1(2), sqrt1(3), sqrt1(4)));
-console.log(res2);
+console.log( func(10) );
+console.log( func(-5) );
