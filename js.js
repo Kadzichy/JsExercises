@@ -1,15 +1,20 @@
-function func(a, b) {
-	return a == b;
-}
+let arr1 = [1, 2, 3, 4];
+function calcArr(arr) {
+let res = 0;
+for (let elem of arr) {
+    res += elem;
+};
+res = res / arr.length
+    return res;
+};
+console.log(calcArr(arr1))
 
-function func1(a, b) {
-	return a != b;
-}
-
-function func2(a, b) {
-	return a + b >= 10;
-}
-
-function func4(num) {
-	return num >= 0;
-}
+let arr2 = [1, 2, 3, 4, 5]
+function calcArr_2(arr) {
+    let res = 1;
+    for (let elem of arr) {
+        res *= elem;
+    }
+    return res;
+};
+console.log(calcArr_2(arr2));
