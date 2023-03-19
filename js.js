@@ -1,17 +1,20 @@
-let arr = [1, 2, 3]
-arr.push(4,5,6)
-console.log(arr);
+let str = 'Oleg';
+let res = str.slice(0) + str.slice(-1).toUpperCase();
+console.log(res)
 
-let arr2 = [1, 2, 3];
-arr2.unshift(4, 5, 6);
-console.log(arr2);
+let str1 = 'Oleg';
+let res1 = str1.slice(0, 2).toUpperCase() + str1.slice(2);
+console.log(res1)
 
-let arr3 = [1, 2, 3];
-console.log(arr3.shift());
+let str2 = 'London';
+let res2 = str2.slice(0, 1).toLowerCase() + str2.slice(1);
+console.log(res2)
 
-let arr4 = [1, 2, 3];
-console.log(arr4.pop());
-
-let arr5 = [1, 2, 3, 4, 5];
-arr5 = arr5.slice(0, 3);
-console.log(arr5);
+let str3 = 'var_test_text';
+console.log(str3)
+let word = str3.split('_');
+for (let i = 0; i <= word.length - 1; i++) {
+    word[i] = word[i].slice(0, 1).toUpperCase() + word[i].slice(1);
+};
+str3 = word.join('');
+console.log(str3)
