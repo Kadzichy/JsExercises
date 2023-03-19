@@ -1,4 +1,14 @@
-function func(num1, num2, num3) {
-	console.log(num1 + num2 + num3);
+function func(num) {
+	console.log(num ** 3);
 }
-func(11, 5, 56);
+func(3);
+
+function func1(num1) {
+	if (num1 > 0){
+        console.log('+++')
+    }
+    else{
+        console.log('---')
+    }
+}
+func1(-3);
