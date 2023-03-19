@@ -1,26 +1,17 @@
-let str = 'js';
-console.log(str.toUpperCase());
+let arr = [1, 2, 3]
+arr.push(4,5,6)
+console.log(arr);
 
-let str2 = 'JS';
-console.log(str2.toLowerCase());
+let arr2 = [1, 2, 3];
+arr2.unshift(4, 5, 6);
+console.log(arr2);
 
-let str3 = 'я учу javascript!';
-let a1 = str3.substr(2, 3);
-let a2 = str3.substr(6, 10);
-console.log(a1, a2);
-let b1 = str3.substring(2, 5);
-let b2 = str3.substring(6, 16);
-console.log(b1, b2);
-let c1 = str3.slice(2, 5);
-let c2 = str3.slice(6, 16);
-console.log(c1, c2);
+let arr3 = [1, 2, 3];
+console.log(arr3.shift());
 
-let str4 = 'abcde';
-console.log(str4.indexOf('c'));
+let arr4 = [1, 2, 3];
+console.log(arr4.pop());
 
-let str5 = 'abcde';
-if (str5.indexOf('a') >= 0) {
-        console.log('true')
-} else {
-        console.log('false')
-};
+let arr5 = [1, 2, 3, 4, 5];
+arr5 = arr5.slice(0, 3);
+console.log(arr5);
