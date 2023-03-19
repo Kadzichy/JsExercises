@@ -1,21 +1,11 @@
-let num = 1;
 function func() {
-	console.log(num);
+	let num = 5;
+	return num;
 }
-func();
+console.log(num);
 
-let num1 = 1;
-function func1() {
-	console.log(num1);
+function func() {
+	let num = 5;
+	return num;
 }
-num1 = 2;
-func1();
-
-function func2() {
-	console.log(num2);
-}
-let num2;
-num2 = 1;
-func2();
-num2 = 2;
-func2();
+console.log(func());
