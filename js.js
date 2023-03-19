@@ -1,13 +1,4 @@
-function name() {
-	console.log('Oleg');
+function func(num1, num2, num3) {
+	console.log(num1 + num2 + num3);
 }
-name();
-
-function sum(){
-    var sum = 0;
-    for (var i = 0; i <= 100; i++) {
-        sum += i;
-    }
-    console.log(sum);
-}
-sum();
+func(11, 5, 56);
