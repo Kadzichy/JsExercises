@@ -1,21 +1,16 @@
-let arr1 = [1, 2, 3, 4];
-function calcArr(arr) {
-let res = 0;
+function func1() {
+    return 3;
+}
+function func2() {
+    return 5;
+    }
+console.log(func1() + func2());
+
+function sum2(arr) {
+    let res = 0;
 for (let elem of arr) {
     res += elem;
-};
-res = res / arr.length
+}
     return res;
-};
-console.log(calcArr(arr1))
-
-let arr2 = [1, 2, 3, 4, 5]
-function calcArr_2(arr) {
-    let res = 1;
-    for (let elem of arr) {
-        res *= elem;
-    }
-    return res;
-};
-console.log(calcArr_2(arr2));
- 
+}
+console.log(sum2([1, 2, 3, 4, 5]));
