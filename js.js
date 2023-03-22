@@ -1,12 +1,7 @@
-let func = (function() {
-	let num = 1;
-	return function() {
-		console.log(num);
-		num++;
-	}
-})();
-func(); 
-func(); 
-func(); 
-func(); 
-func();
+function each(arr, callback) {
+let result = each([1, 2, 3, 4, 5], 
+	function(num) { 
+	return num * 2;
+});
+console.log(result);
+}
