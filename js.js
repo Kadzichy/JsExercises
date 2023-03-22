@@ -2,12 +2,18 @@ function func() {
 	console.log('!');
 }
 
-let func1 = function() {
+let func = function() {
 	console.log('!');
 }
 
-func2(); 
++function() {
+	console.log('!');
+}
 
-function func2() {
-	console.log('alec');
+!function func() {
+	console.log('!');
+}
+
+-function func() {
+	console.log('!');
 }
