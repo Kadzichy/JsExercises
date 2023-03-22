@@ -1,29 +1,22 @@
-function func() {
-	let num = 0;
-	
-	return function() {
-		console.log(num);
-		num++;
-	};
-}
+!function() {
+	console.log('!');
+}();
 
-func()();
-func()();
-func()();
++function() {
+	console.log('!');
+}();
 
-let counter = 0;	
-function test() {
-	return function() {
-		console.log(counter);
-		counter++;
-	};
-}
+let result = function() {
+	return '!';
+}();
+console.log(result);
 
-let func = test;
+let result1 = function() {
+	return '!';
+};
+console.log(result1);
 
-let func1 = func();
-let func2 = func();
-func1();
-func2();
-func1();
-func2();
+let result2 = function() {
+	return '!';
+};
+console.log(result2())
