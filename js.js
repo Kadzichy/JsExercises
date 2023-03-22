@@ -1,16 +1,23 @@
-let result = every([1, 2, 3, 4, 5], 
-	elem => elem > 0);
+let arr = [1, 2, 3, 4, 5];
+function func(arr) {
+	console.log(arr.shift()); 
+	console.log(arr); 
+	
+	console.log(arr.shift()); 
+	console.log(arr); 
+	
+	console.log(arr.shift()); 
+	console.log(arr); 
+}
 
-let result1 = every([1, 2, 3, 4, 5], 
-	elem, index => elem * index > 10);
-
-let arr = [[1, 2, 3], [4, 5, 6], 
-	[7, 8, 9]]; 
-let result2 = each(arr, function(elem, 
-	index) { 
-	if (elem * index > 10) {
-		return true;
-	} else {
-		return false;
+let arr1 = [1, 2, 3, 4, 5];
+function getSum(arr1) {
+	let sum = arr1.shift();
+	
+	if (arr1.length !== 0) {
+		sum += getSum(arr1);
 	}
-});
+	
+	return sum;
+}
+console.log(getSum());
