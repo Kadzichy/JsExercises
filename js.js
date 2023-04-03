@@ -1,15 +1,12 @@
-let arr1 = [1, 2, 3];
-let arr2 = [4, 5, 6];
-let arr  = ['a', ...arr1, 'b', 'c', ...arr2]; 
+let arr = [...'12345'];
 console.log(arr);
 
-let arr3 = [1, 2, 3];
-let arr4 = [4, 5, 6];
+let arr1 = ['a', ...'12345'];
+console.log(arr1);
 
-let arr5  = ['a', ...arr3, ...arr3, 'b', 'c']; 
-console.log(arr5);
+let arr2 = [...'12345', ...'56789'];
+console.log(arr2);
 
-let arr6 = [1, 2, 3];
-let arr7 = [...arr6, 4, 5, 6];
-let arr8  = ['a', 'b', 'c', ...arr7];
-console.log(arr8);
+let arr3 = ['a', 'b', 'c'];
+let arr4 = [...arr3, ...'12345'];
+console.log(arr4);
