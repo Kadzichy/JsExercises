@@ -1,8 +1,7 @@
-let options = {
-    width: 400,
-    height: 500,
+let obj = {
+	year:  2025,
+	month: 12,
+	day:   31,
 };
-let { color = 'red', width, height} = options;
-console.log(color);
-console.log(width);
-console.log(height);
+
+let year, month, day; // объявим переменные заранее
