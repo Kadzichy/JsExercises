@@ -1,3 +1,6 @@
-let str = '2025-12-31';
-let res = str.split('-').reverse().join('.');
-console.log(res);
+if (date == 0 || date == 6){
+console.log("Сегодня выходной")
+}
+else{
+console.log("Сегодня рабочий день")
+}
