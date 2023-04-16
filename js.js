@@ -1,8 +1,7 @@
-let elems = document.querySelectorAll(".elem1");
-let btn = document.querySelector('#button1')
-btn.addEventListener('click', () => {
-    console.log(elems)
-    for (let elem of elems) {
-        elem.textContent = 'text';
-    }
-})
+let text = document.querySelectorAll(".par");
+for (let elem of text) {
+    elem.addEventListener("click", func1);
+}
+function func1() {
+    this.textContent = Math.pow(Number(this.textContent), 2)
+}
