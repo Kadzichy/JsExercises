@@ -1,8 +1,9 @@
-let elem = document.querySelector('#elem');
-elem.dataset.num = 123;
-console.log(elem.childNodes[0]);
-console.log(elem.childNodes[1]);
-console.log(elem.childNodes[2]);
-for (let node of elem.childNodes) {
-    console.log(node);
+let elems = document.querySelectorAll('li');
+let sum = 0;
+for (let elem of elems) {
+    let text = +elem.textContent;
+    if (text % 6 === 0) {
+        sum += text;
+    }
 }
+console.log(sum)
