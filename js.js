@@ -1,5 +1,5 @@
 let elem = document.querySelector('#elem');
-let p = document.querySelector('#p')
-elem.addEventListener('blur', () => {
-    p.textContent = elem.textContent
+let button = document.querySelector('.btn')
+button.addEventListener('click', () => {
+    elem.disabled = !elem.disabled
 })
