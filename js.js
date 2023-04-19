@@ -1,5 +1,5 @@
-let elem = document.querySelector('#elem');
+let elem = document.querySelector("#elem");
 let p = document.querySelector('p')
-elem.addEventListener('change', function() {
-    p.textContent = this.value
+elem.addEventListener("input", function () {
+    p.textContent = this.value;
 });
