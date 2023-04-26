@@ -1,7 +1,7 @@
 window.onload = function() {
-const select = document.getElementById("mySelect");
-const paragraph = document.getElementById("myParagraph");
-const button = document.getElementById("myButton");
-button.addEventListener("click", function() {
-  const selectedOption = select.options[select.selectedIndex].text;
-  paragraph.textContent = selectedOption;
+const today = new Date();
+const currentMonth = today.getMonth() + 1;
+const monthsSelect = document.getElementById("months");
+const currentMonthOption = monthsSelect.querySelector(`option[value="${currentMonth}"]`);
+currentMonthOption.selected = true;
+}
