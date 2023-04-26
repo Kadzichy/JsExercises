@@ -1,9 +1,7 @@
 window.onload = function() {
-const input = document.getElementById('input');
-const select = document.getElementById('select');
-input.addEventListener('blur', () => {
-  const value = parseInt(input.value);
-  if (!isNaN(value)) {
-    select.selectedIndex = value - 1;
-  }
-});
+const mySelect = document.getElementById("mySelect");
+const options = mySelect.options;
+for (let i = 0; i < options.length; i++) {
+  options[i].text += " " + options[i].value;
+}
+}
