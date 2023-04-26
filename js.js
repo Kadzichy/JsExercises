@@ -1,21 +1,19 @@
 window.onload = function() {
-    const links = document.querySelectorAll('a');
-  links.forEach(link => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
-      link.textContent += link.href;
-    });
-  });
+    const container = document.querySelector('#container');
+const first = document.querySelector('#first');
+const second = document.querySelector('#second');
+const button = document.querySelector('#button');
 
-let input1 = document.getElementById('input1');
-  let input2 = document.getElementById('input2');
-  let result = document.getElementById('result');
-  let calculateBtn = document.getElementById('calculate');
-  calculateBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    let num1 = +input1.value;
-    let num2 = +input2.value;
-    let sum = num1 + num2;
-    result.textContent = sum;
-  });
+container.addEventListener('click', (event) => {
+  console.log(`Click on ${event.target.tagName} in container`);
+});
+first.addEventListener('click', (event) => {
+  console.log(`Click on ${event.target.tagName} in first`);
+});
+second.addEventListener('click', (event) => {
+  console.log(`Click on ${event.target.tagName} in second`);
+});
+button.addEventListener('click', (event) => {
+  console.log(`Click on ${event.target.tagName} in button`);
+});
 }
