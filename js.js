@@ -1,5 +1,10 @@
-let elem = document.querySelector('#elem');
-function func(surname, name) {
-	console.log(this.value + ', ' + surname + ' ' + name); 
+let elem = document.getElementById('elem');
+function func(name, surname) {
+    console.log(this.value + ', ' + name 
+        + ' ' + surname); 
 }
-func.apply(elem, ['Oleg', 'Oleg']); 
+
+let funcBound = func.bind(elem);
+
+funcBound('John', 'Smit'); // выводит 'привет, John Smit'
+funcBound('Eric', 'Luis');
