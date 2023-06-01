@@ -1,13 +1,11 @@
-window.onload = function() {
-    list.addEventListener('click', function(event) {
-	event.target.innerHTML = event.target.innerHTML 
-		+ '!'; 
-});
-
-list.addEventListener('click', function(event) {
-	let li = event.target.closest('li');
-	if (li) {
-		li.innerHTML = li.innerHTML + '!';
+let elem = document.querySelector('#elem');
+elem.addEventListener('blur', parent);
+function parent() {
+	console.log(this.value); // text
+	
+	function child() {
+		console.log(this.value); // undefined
 	}
-});
+	child();
+}
 }
