@@ -1,21 +1,29 @@
 window.onload = function() {
-let list = document.querySelector('#list');
+let paragraphs = document.querySelectorAll('#parent p');
+for (let i = 0; i < paragraphs.length; i++) {
+  let deleteLink = document.createElement('a');
+  deleteLink.href = '#';
+  deleteLink.textContent = 'delete';
 
- list.addEventListener('click', function(event) {
-  let target = event.target;
-
-  if (target.tagName === 'LI') {
-      let input = document.createElement('input');
-      input.value = target.textContent;
-
-      input.addEventListener('blur', function() {
-        target.textContent = this.value;
-        this.parentNode.removeChild(this);
-      });
-
-      target.textContent = '';
-      target.appendChild(input);
-      input.focus();
-    }
+  deleteLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    this.parentNode.parentNode.removeChild(this.parentNode);
   });
+  paragraphs[i].appendChild(deleteLink);
+}let spans = document.querySelectorAll('#parent span');
+for (let i = 0; i < spans.length; i++) {
+  spans[i].addEventListener('click', function() {
+    let input = document.createElement('input');
+    input.type = 'text';
+    input.value = this.textContent;
+    input.addEventListener('blur', function() {
+      this.parentNode.removeChild(this);
+      let span = document.createElement('span');
+      span.textContent = this.value;
+      this.parentNode.insertBefore(span, this);
+    });
+    this.parentNode.insertBefore(input, this);
+  });
+}
+
 }
