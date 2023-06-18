@@ -1,12 +1,14 @@
-window.onload = function() {
-;(function(selector1, selector2, selector3, selector4) {
-  let input1 = document.querySelector(selector1);
-  let input2 = document.querySelector(selector2);
-  let input3 = document.querySelector(selector3);
-  let button = document.querySelector(selector4);
-  button.addEventListener('click', function() {
-    let sum = Number(input1.value) + Number(input2.value) + Number(input3.value);
-    console.log(sum);
-  });
-})('#input1', '#input2', '#input3', '#button');
-}
+;(function(root) {
+	let parent = document.querySelector(root);
+	let div1 = parent.querySelector('#div1');
+	let div2 = parent.querySelector('#div2');
+	let div3 = parent.querySelector('#div3');
+	let res  = parent.querySelector('#res');
+	let btn  = parent.querySelector('#btn');
+	btn.addEventListener('click', function() {
+		let num1 = Number(div1.textContent);
+		let num2 = Number(div2.textContent);
+		let num3 = Number(div3.textContent);
+		res.textContent = num1 + num2 + num3;
+	});
+})('#parent');
