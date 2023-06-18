@@ -1,7 +1,9 @@
 window.onload = function() {
-let paragraphs = document.querySelectorAll('p');
-paragraphs.forEach(function(paragraph, index) {
-  let paragraphNumber = index + 1;
-  paragraph.textContent = paragraphNumber + '. ' + paragraph.textContent;
-});
+function appendText(elems, text) {
+	for (let elem of elems) {
+		elem.textContent = text;
+	}
+}
+let elems = document.querySelectorAll('.elem');
+appendText(elems, 'text');
 }
