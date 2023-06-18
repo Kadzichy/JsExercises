@@ -1,11 +1,13 @@
-;(function({root, type = 'p', amount = 5}) {
-	let parent = document.querySelector(root);
-	for (let i = 1; i <= amount; i++) {
-		let elem = document.createElement(type);
-		parent.append(elem);
+;(function() {
+	let module = {};
+	module.func1 = function() {
+		alert('функция модуля');
 	}
-})(config);
-let config = {
-	root:  '#parent',
-	amount: 10
-}
+	module.func2 = function() {
+		alert('функция модуля');
+	}
+	module.func3 = function() {
+		alert('функция модуля');
+	}
+	window.module = module;
+})();
